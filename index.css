@@ -1,0 +1,676 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+    scroll-behavior: smooth;
+    /*transition: 5s;*/
+}
+
+p{
+    font-weight: 300;
+}
+
+header{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    padding: 20px 10px;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    transition: 0.5s;
+    /*background-color: rgba(100, 100, 100, 0.5);*/
+}
+
+.logo{
+    color: #fff;
+    font-weight: bold;
+    font-size: 2em;
+    text-decoration: none;
+}
+.logo span{
+    color: #fb911f;
+}
+
+.navbar{
+    display: flex;
+    position: relative;
+}
+
+.navbar li{
+    list-style: none;
+}
+.navbar a{
+    color: #fff;
+    text-decoration: none;
+    margin-left: 30px;
+    font-weight: 700;
+}
+.btn-reserve{
+    padding: 10px 20px;
+    background: #fb911f;
+    margin-top: -10px;
+    text-transform: uppercase;
+}
+.btn-reserve:hover{
+    background: #d87710;
+    transition: ease-out;
+}
+header .navbar li a:hover{
+    color: #fb911f;
+    border-bottom: 2px solid #fb911f;
+}
+.baniere{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(scrol.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.baniere .contenue{
+    max-width: 70%;
+    text-align: center;
+}
+.contenue h2{
+    color: #fff;
+    font-size: 3em;
+    text-transform: capitalize;
+}
+.contenue p:nth-child(2){
+    color: #fff;
+    font-size: 1.2em;
+}
+.btn1{
+    font-size: 1em;
+    color: #fff;
+    background: #fb911f;
+    padding: 10px 20px;
+    display: inline-block;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5s ;
+    margin-left: 10px;
+}
+.btn2{
+    font-size: 1em;
+    color: #fff;
+    background: #2a4963;
+    padding: 10px 20px;
+    display: inline-block;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5s ;
+    margin-left: 10px;
+}
+
+.btn1:hover{
+    letter-spacing: 4px;
+}
+section{
+    padding: 100px;
+}
+.row{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.row .col50{
+    position: relative;
+    width: 48%;
+    justify-content: center;
+    align-items: center;
+}
+.row .col50 h2{
+    margin-bottom: 20px;
+}
+.titre-text{
+    color: #000;
+    font-size: 2em;
+    font-weight: 300px;
+    text-transform: capitalize;
+}
+.titre-text span{
+    color: #fb911f;
+    font-size: 1.5em;
+    font-weight: 700px;
+}
+
+.row .col50 .img{
+    height: 450px;
+    width: 600px;
+    position: relative;
+    overflow: hidden;
+}
+
+/*img{
+    height: 450px;
+    width: 600px;
+}*/
+
+.titre{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.menu{
+    margin-top: -100px;
+}
+
+.menu .contenu{
+    display: flex; 
+    flex-wrap: wrap;
+    margin-top: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu .contenu .box{
+    width: 300px;
+    margin: 20px;
+    border: 20px solid #fff;
+    box-shadow:  20px 15px 35px rgba(0, 0, 0, 0.8);
+    
+}
+
+.menu .contenu .box .inbox{
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+
+.menu .contenu .box .inbox img {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.menu .contenu .box .text{
+    text-align: center;
+    font-weight: 300px;
+    color: #111;
+}
+
+.menu .contenu .box .text h3{
+    font-weight: 400;
+}
+
+.expert{
+    margin-top: -100px;
+}
+
+.expert .contenu{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.expert .contenu .box{
+    width: 250px;
+    margin: 15px;
+}
+
+.expert .contenu .box img{
+    position: relative;
+    width: 100%;
+    height: 300px;
+    top: 0px;
+    left: 0px;
+    object-fit: cover;
+}
+
+.expert .contenu .box h3{
+    color: #111;
+    font-weight: 400;
+    text-align: center;
+}
+
+.témoignage{
+    background-image: url(design.jpg);
+    background-size: cover;
+}
+
+
+/*.témoignage{
+    margin-top: -100px;
+}*/
+
+.témoignage .contenu{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 40px;
+}
+
+.témoignage .contenu .box{
+    width: 340px;
+    height: auto;
+    margin: 20px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 15px;
+    padding: 50px;
+}
+
+.témoignage .contenu .box .inbox{
+    position: relative;
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    background-color: red;
+}
+
+.témoignage .contenu .box .inbox img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    justify-content: center;
+    align-items: center;
+}
+
+.témoignage .contenu .box .text {
+    text-align: center;
+    color: #666;
+    font-style: italic;
+}
+
+.témoignage .contenu .box .text h3{
+    color: #fb911f;
+    margin-top: 20px;
+    font-size: 1em;
+    font-weight: 600;
+}
+
+#blanc .titre-text,
+#blanc p{
+    color: #fff;
+}
+
+.Contact {
+    background-image: url(wesh.jpg);
+    background-size: cove;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.8);
+    width: 100%;
+    background-position: unset;
+    object-fit: cover;
+    justify-content: center;
+    align-items: center;
+    /*text-align: center;*/
+}
+
+.Contact .titre_noir {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.contactform {
+    /*position: relative;*/
+    padding: 75px 50px;
+    background: #fff;
+    box-shadow: 5px 15px 50px rgba(0, 0, 0, 0.8);
+    max-width: 500px;
+    margin-top: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactform .inputboite{
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.contactform h3{
+    color: #111;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.contactform .inputboite input,
+ textarea{
+    width: 100%;
+    border: 2px solid #555;
+    padding: 10px;
+    color: #111;
+    outline: none;
+    font-size: 16px;
+    font-weight: 300;
+    resize: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.contactform .inputboite input[type="submit"]{
+    border-radius: 20px;
+    color: #fff;
+    background-color: #fb911f;
+    display: inline-block;
+    cursor: pointer;
+    text-transform: capitalize;
+    text-decoration: none;
+    letter-spacing: 2px;
+    outline: none;
+    border: none;
+    font-size: 1em;
+    font-weight: 900;
+    transition: 0.5s;
+    max-width: 220px;
+}
+
+.copyright{
+    padding: 20px 40px;
+    border-top: 2px solid rgba(0, 0, 0, 0.1);
+    background: rgba(228, 222, 222, 0.8);
+    text-align: center;
+}
+
+/*.copyright p:nth-child(1){
+    color: #333;
+}*/
+
+.copyright a{
+    color: #fb911f;
+    text-decoration: none;
+    font-weight: 600;
+    font-style: italic;
+}
+.acte{
+    justify-content: center;
+    align-items: center;
+}
+
+header.sticky {
+    background: #fff;
+    padding: 10px 10px;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+header.sticky .logo{
+    color: #111;
+}
+
+header.sticky .navbar li a {
+    color: #000;
+}
+
+header.sticky li a:hover{
+    color: #fb911f;
+    border-bottom: 2px solid #fb911f ;
+}
+
+@media (max-width: 991px) {
+    .menuToggle {
+        position: relative;
+        width: 40px;
+        height: 40px;
+        background-image: url(Capture.jpeg);
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+    }
+   .menuToggle.active {
+    background-image: url(image/zozo.jpeg);
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+   }
+   header.sticky .menuToggle{
+    filter: invert(1);
+   }
+
+    #space{
+        margin-top: 80px;
+    }
+    header, header.sticky{
+        padding: 10px 20px;
+    }
+    header .navbar{
+        margin-left: 0px;
+    }
+    header .navbar li a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 0.8em;
+        font-weight: 300px;
+    }
+    .navbar {
+        display: block;
+        max-height: 0;
+        opacity: 0;
+        overflow: hidden;
+        transition: max-height 0.4s ease, opacity 0.4s ease;
+    }
+    .navbar.active {
+        max-height: 700px;
+        opacity: 1;
+        white-space-collapse: 5px;
+    }
+    .btn-reserve {
+        margin-top: 5px;
+    }
+
+    .Apropos{
+        text-align: center;
+        overflow: hidden;
+    }
+    section{
+        padding: 20px;
+    }
+    .contenue h2{
+        font-size: 2em;
+    }
+    .contenue p:nth-child(2){
+        font-size: 1.5em;
+    }
+
+    .row{
+        display: flex;
+        flex-direction: column;
+    }
+    .row .col50 {
+    position: relative;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.row {
+    flex-direction: column;
+}
+
+img{
+        width: 700px;
+        height: 500px;
+    }
+}
+
+@media (max-width: 440px) {
+    .contenue h2{
+        font-size: 2.2em;
+    }
+
+    img{
+        width: 400px;
+        height: 400px;
+    }
+
+    .img{
+        margin-left: -100px;
+    }
+
+    .Apropos{
+        overflow: hidden;
+    }
+}
+
+
+
+
+
+/* devanagari */
+@font-face {
+  font-family: 'Poppins';
+  font-style: italic;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v24/pxiDyp8kv8JHgFVrJJLm21lVFteOcEg.woff2) format('woff2');
+  unicode-range: U+0900-097F, U+1CD0-1CF9, U+200C-200D, U+20A8, U+20B9, U+20F0, U+25CC, U+A830-A839, U+A8E0-A8FF, U+11B00-11B09;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Poppins';
+  font-style: italic;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v24/pxiDyp8kv8JHgFVrJJLm21lVGdeOcEg.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Poppins';
+  font-style: italic;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v24/pxiDyp8kv8JHgFVrJJLm21lVF9eO.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* devanagari */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v24/pxiByp8kv8JHgFVrLDz8Z11lFc-K.woff2) format('woff2');
+  unicode-range: U+0900-097F, U+1CD0-1CF9, U+200C-200D, U+20A8, U+20B9, U+20F0, U+25CC, U+A830-A839, U+A8E0-A8FF, U+11B00-11B09;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v24/pxiByp8kv8JHgFVrLDz8Z1JlFc-K.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v24/pxiByp8kv8JHgFVrLDz8Z1xlFQ.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* devanagari */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v24/pxiEyp8kv8JHgFVrJJbecmNE.woff2) format('woff2');
+  unicode-range: U+0900-097F, U+1CD0-1CF9, U+200C-200D, U+20A8, U+20B9, U+20F0, U+25CC, U+A830-A839, U+A8E0-A8FF, U+11B00-11B09;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v24/pxiEyp8kv8JHgFVrJJnecmNE.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v24/pxiEyp8kv8JHgFVrJJfecg.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* devanagari */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v24/pxiByp8kv8JHgFVrLGT9Z11lFc-K.woff2) format('woff2');
+  unicode-range: U+0900-097F, U+1CD0-1CF9, U+200C-200D, U+20A8, U+20B9, U+20F0, U+25CC, U+A830-A839, U+A8E0-A8FF, U+11B00-11B09;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v24/pxiByp8kv8JHgFVrLGT9Z1JlFc-K.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v24/pxiByp8kv8JHgFVrLGT9Z1xlFQ.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* devanagari */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v24/pxiByp8kv8JHgFVrLEj6Z11lFc-K.woff2) format('woff2');
+  unicode-range: U+0900-097F, U+1CD0-1CF9, U+200C-200D, U+20A8, U+20B9, U+20F0, U+25CC, U+A830-A839, U+A8E0-A8FF, U+11B00-11B09;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v24/pxiByp8kv8JHgFVrLEj6Z1JlFc-K.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v24/pxiByp8kv8JHgFVrLEj6Z1xlFQ.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
